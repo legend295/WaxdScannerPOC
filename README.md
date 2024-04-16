@@ -7,8 +7,8 @@ dependencies {
 }
 ```
 
-```settings.gradle
- maven {
+```bash
+maven {
        url 'https://jitpack.io'
        credentials { username authToken }
 }
