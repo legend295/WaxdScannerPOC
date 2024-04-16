@@ -1,6 +1,6 @@
 # Fingerprint Scanner POC
 
-[![Release](https://jitpack.io/v/legend295/FingerprintScannerSDK.svg)](https://jitpack.io/#legend295/FingerprintScannerSDK)
+[![Release](https://jitpack.io/v/legend295/FingerprintScannerSDK.svg)]
 
 A GitHub repo demonstrating seamless integration of fingerprint scanning into Android apps.
 
