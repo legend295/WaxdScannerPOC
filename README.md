@@ -24,7 +24,7 @@ dependencies {
 }
 ```
 
-![Jitpack](https://jitpack.io/v/legend295/FingerprintScannerSDK.svg)
+![MavenCentral](https://maven-badges.herokuapp.com/maven-central/com.hbb20/ccp/badge.svg)
 
 Add the above line to your project's `build.gradle` file and `settings.gradle` file to include FingerprintScannerLib in your Android project.
 
