@@ -4,28 +4,43 @@
 
 A GitHub repo demonstrating seamless integration of fingerprint scanning into Android apps.
 
-### How to add to your project
-Add it to your build.gradle with:
-```gradle
-allprojects {
-    repositories {
-        maven { 
-            url "https://jitpack.io"
-            credentials { username authToken }
-         }
-    }
+### How to integrate into your project
+1. Add the below lines to your project's `build.gradle` file and `settings.gradle` file to include FingerprintScannerLib in your Android project:
+
+```bash
+dependencies {
+      implementation 'com.github.legend295.FingerprintScannerSDK:scanner:main-SNAPSHOT'
 }
 ```
 and:
 
-```gradle
-dependencies {
-      implementation 'com.github.legend295:FingerprintScannerSDK:main-SNAPSHOT'
+```bash
+maven {
+      url 'https://jitpack.io'
+      credentials { username authToken }
 }
+
 ```
 
-[//]: # (![Release]&#40;https://jitpack.io/v/legend295/FingerprintScannerSDK.svg&#41;)
+**The `authToken` will be provided by our support.**
 
-Add the above line to your project's `build.gradle` file and `settings.gradle` file to include FingerprintScannerLib in your Android project.
+2. StartActivityForResult on any View's click in your Activity/Fragment:
 
-**authToken will be provided by our support.** 
+```
+scanningLauncher.launch(Intent(this, ScannerActivity()::class.java))
+```
+
+and register launcher in same Activity/Fragment for result like below:
+
+```
+ private val scanningLauncher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+            if (it.resultCode == RESULT_OK) {
+                val list: ArrayList<File>? = it.data?.serializable(ScannerConstants.DATA)
+            }
+        }
+```
+
+list variable has the files data.
+
+3. That's it. Run the project and see the results.
