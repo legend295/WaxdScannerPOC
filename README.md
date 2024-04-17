@@ -20,7 +20,7 @@ and:
 
 ```gradle
 dependencies {
-      implementation 'com.github.legend295.FingerprintScannerSDK:scanner:{latest version}'
+      implementation 'com.github.legend295:FingerprintScannerSDK:main-SNAPSHOT'
 }
 ```
 
