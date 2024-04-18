@@ -1,7 +1,5 @@
 # Fingerprint Scanner POC
 
-[//]: # ([![Release]&#40;https://jitpack.io/v/legend295/FingerprintScannerSDK.svg&#41;]&#40;https://jitpack.io/#legend295/FingerprintScannerSDK&#41;)
-
 A GitHub repo demonstrating seamless integration of fingerprint scanning into Android apps.
 
 ### How to integrate into your project
@@ -9,7 +7,7 @@ A GitHub repo demonstrating seamless integration of fingerprint scanning into An
 
 ```bash
 dependencies {
-      implementation 'com.github.legend295.FingerprintScannerSDK:scanner:main-SNAPSHOT'
+      implementation 'com.github.legend295.FingerprintScannerSDK:scanner:1.0.7'
 }
 ```
 Add this under `settings.gradle` file to include FingerprintScannerLib :
