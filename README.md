@@ -5,14 +5,14 @@
 A GitHub repo demonstrating seamless integration of fingerprint scanning into Android apps.
 
 ### How to integrate into your project
-1. Add the below lines to your project's `build.gradle` file and `settings.gradle` file to include FingerprintScannerLib in your Android project:
+1. Add the below lines to your project's `build.gradle` file of your Android project:
 
 ```bash
 dependencies {
       implementation 'com.github.legend295.FingerprintScannerSDK:scanner:main-SNAPSHOT'
 }
 ```
-and:
+Add this under `settings.gradle` file to include FingerprintScannerLib :
 
 ```bash
 maven {
