@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "436677656326",
+    "project_id": "waxdpoc",
+    "storage_bucket": "waxdpoc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436677656326:android:48baaa3efeaf9d975ae887",
+        "android_client_info": {
+          "package_name": "com.waxdscannerpoc.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBmlsrW9zj5NSrErga_b5FgQdQNGqsKdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
