@@ -14,13 +14,10 @@ Add this under `settings.gradle` file to include FingerprintScannerLib :
 
 ```bash
 maven {
-      url 'https://jitpack.io'
-      credentials { username authToken }
+      url 'https://jitpack.io'      
 }
 
 ```
-
-**The `authToken` will be provided by our support.**
 
 2. StartActivityForResult on any View's click in your Activity/Fragment:
 
