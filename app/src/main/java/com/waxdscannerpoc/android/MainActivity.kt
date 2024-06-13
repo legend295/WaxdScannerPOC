@@ -44,18 +44,34 @@ class MainActivity : AppCompatActivity() {
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
             if (it.resultCode == RESULT_OK) {
                 val list: ArrayList<File>? = it.data?.serializable(ScannerConstants.DATA)
+                val isVerified: Boolean? =
+                    it.data?.getBooleanExtra(ScannerConstants.VERIFICATION_RESULT, false)
                 Log.d(MainActivity::class.simpleName, list?.size.toString())
-                handleResponse(list)
+                handleResponse(list, isVerified)
             }
         }
 
-    private fun handleResponse(list: ArrayList<File>?) {
+    private fun handleResponse(list: ArrayList<File>?, isVerified: Boolean?) {
+        if (list.isNullOrEmpty()) {
+            tvStatus?.text =
+                StringBuilder().append("Fingerprint verification :- ").append(isVerified)
+            return
+        }
         var message = ""
-        list?.forEach {
+        list.forEach {
             message += "\n${it.path}"
         }
         if (message.isNotEmpty()) {
             tvStatus?.text = StringBuilder().append("File saved to paths :- ").append(message)
+        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        try {
+            sheet?.dismiss()
+        } catch (e: Exception) {
+            e.printStackTrace()
         }
     }
 }
