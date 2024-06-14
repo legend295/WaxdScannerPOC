@@ -1,4 +1,4 @@
-# Fingerprint Scanner POC
+# Waxd Scanner POC
 
 A GitHub repo demonstrating seamless integration of fingerprint scanning into Android apps.
 
