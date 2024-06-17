@@ -1,4 +1,4 @@
-# Waxd Scanner POC ![](https://jitpack.io/v/legend295/FingerprintScannerSDK.svg)]
+# Waxd Scanner POC ![](https://jitpack.io/v/legend295/FingerprintScannerSDK.svg)
 
 A GitHub repo demonstrating seamless integration of fingerprint scanning into Android apps.
 
