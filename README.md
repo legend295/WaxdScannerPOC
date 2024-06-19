@@ -10,7 +10,7 @@ dependencies {
       implementation 'com.github.legend295.FingerprintScannerSDK:scanner:1.0.9'
 }
 ```
-Add this under `settings.gradle` file to include FingerprintScannerLib :
+Add this under `settings.gradle` file to include FingerprintScannerSDK :
 
 ```bash
 maven {
