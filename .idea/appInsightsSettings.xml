@@ -27,10 +27,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.waxdscannerpoc.android" />
+                  <option name="mobileSdkAppId" value="1:436677656326:android:48baaa3efeaf9d975ae887" />
+                  <option name="projectId" value="waxdpoc" />
+                  <option name="projectNumber" value="436677656326" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
