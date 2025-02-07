@@ -7,7 +7,7 @@ A GitHub repo demonstrating seamless integration of fingerprint scanning into An
 
 ```bash
 dependencies {
-      implementation 'com.github.legend295.FingerprintScannerSDK:scanner:1.0.11'
+      implementation 'com.github.legend295.FingerprintScannerSDK:scanner:latestVersion'
 }
 ```
 Add this under `settings.gradle` file to include FingerprintScannerSDK :
